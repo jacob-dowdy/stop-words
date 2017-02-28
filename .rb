@@ -6,4 +6,4 @@ stopwords = %w{the a by on for of are with just but and to the my in I has some}
 
 words = text.scan(/\w+/)
 keywords = words.select {|word| !stopwords.include?(word)}
-puts keywords.join('')
+puts keywords.join(' ')
